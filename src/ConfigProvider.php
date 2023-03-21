@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace HyperfLjh\Captcha;
 
+
+use HyperfLjh\Captcha\Listener\ValidatorFactoryResolvedListener;
+
 class ConfigProvider
 {
     public function __invoke(): array
@@ -19,6 +22,9 @@ class ConfigProvider
                         __DIR__,
                     ],
                 ],
+            ],
+            'listeners' => [
+                ValidatorFactoryResolvedListener::class,
             ],
             'publish'      => [
                 [
