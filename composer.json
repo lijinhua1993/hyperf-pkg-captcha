@@ -1,0 +1,38 @@
+{
+    "name": "hyperf-ljh/captcha",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "captcha"
+    ],
+    "description": "适用于hyperf的图形验证码",
+    "autoload": {
+        "psr-4": {
+            "HyperfLjh\\Captcha\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-fileinfo": "*",
+        "ext-imagick": "*",
+        "hyperf-ljh/encryption": "^1.0",
+        "hyperf/cache": "^3.0",
+        "hyperf/di": "3.0.*",
+        "hyperf/framework": "3.0.*",
+        "hyperf/validation": "^3.0"
+    },
+    "suggest": {
+        "swow/swow": "Required to create swow components."
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "HyperfLjh\\Captcha\\ConfigProvider"
+        }
+    }
+}
