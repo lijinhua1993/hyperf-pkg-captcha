@@ -13,7 +13,7 @@ php bin/hyperf.php vendor:publish hyperf-ljh/captcha
 ```
 
 > 字体文件默认发布到 `<root>/storage/fonts` 目录。
-组件依赖 `lijinhua/hyperf-ext-encryption` 组件加解密 `key`，依赖 `hyperf/cache` 组件暂存使用过的 `key`，您需要发布这些组件的配置：
+组件依赖 `hyperf-ljh/encryption` 组件加解密 `key`，依赖 `hyperf/cache` 组件暂存使用过的 `key`，您需要发布这些组件的配置：
 
 ```shell
 php bin/hyperf.php vendor:publish hyperf-ljh/encryption
